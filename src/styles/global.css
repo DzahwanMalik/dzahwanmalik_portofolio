@@ -4,13 +4,14 @@
 
 @theme {
   /* Width */
+  --width-navbar: 1024px;
   --width-container: 1444px;
 
-  --color-primary: #2b2a2a;
-  --color-secondary: #89986d;
+  --color-primary: #FFFFFF;
+  --color-secondary: #FFC23C;
 
   /* Background */
-  --color-base: #fcf8f8;
+  --color-base: #100720;
 }
 
 * {

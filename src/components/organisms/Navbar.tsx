@@ -4,8 +4,8 @@ import SocialMediaContainer from "../molecules/SocialMediaContainer";
 
 const Navbar = () => {
   return (
-    <nav className="bg-base fixed z-50 top-0 left-0 w-full p-5 text-primary font-semibold">
-      <div className="flex justify-between items-center w-container m-auto">
+    <nav className="fixed z-50 top-10 left-1/2 -translate-x-1/2 py-5 px-20 text-primary font-semibold rounded-full border border-primary/30 backdrop-blur-2xl bg-primary/10">
+      <div className="flex justify-between items-center w-navbar m-auto">
         <ul className="flex gap-16">
           {navbar.map((item) => (
             <li key={item.name}>
