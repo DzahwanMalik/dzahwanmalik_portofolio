@@ -11,12 +11,13 @@ const AboutDescription = () => {
           Hi, I'm <span className="text-secondary">Dzahwan Malik!</span>
         </h2>
         <p className="font-medium">
-          <span className="font-bold">A Tech Enthusiast</span> who graduated from Islamic Boarding School with
-          experience in Building Website Apps and Website Development. Skilled
-          in JavaScript, TypeScript, ReactJS, ExpressJS, NodeJS, MySQL. Familiar
-          with Version Control System and Software Development Life Cycle.
-          Actively participate in Web Development seminars and bootcamps at
-          Harisenin Full Stack Developer Program.
+          <span className="font-bold">A Tech Enthusiast</span> who graduated
+          from Islamic Boarding School with experience in Building Website Apps
+          and Website Development. Skilled in JavaScript, TypeScript, ReactJS,
+          ExpressJS, NodeJS, MySQL. Familiar with Version Control System and
+          Software Development Life Cycle. Actively participate in Web
+          Development seminars and bootcamps at Harisenin Full Stack Developer
+          Program.
         </p>
         <div className="flex gap-16">
           <div className="flex flex-col items-center justify-center">

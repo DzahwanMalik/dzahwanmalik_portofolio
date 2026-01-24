@@ -3,7 +3,7 @@ import Navbar from "../components/organisms/Navbar";
 
 const MainLayout = () => {
     return (
-        <div className="min-h-screen bg-base">
+        <div className="bg-base">
             <header>
                 <Navbar />
             </header>
