@@ -6,10 +6,6 @@ const navbar: Navbar[] = [
     link: "/",
   },
   {
-    name: "About",
-    link: "/about",
-  },
-  {
     name: "Projects",
     link: "/projects",
   },

@@ -1,14 +1,21 @@
 import { NavLink } from "react-router";
 import navbar from "../../constants/navbar";
 import SocialMediaContainer from "../molecules/SocialMediaContainer";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 const Navbar = () => {
   return (
     <nav className="fixed z-50 top-10 left-1/2 -translate-x-1/2 w-full max-w-361 px-5 md:px-0">
       <div className="m-auto py-3 px-8 text-primary font-semibold rounded-full border border-primary/30 backdrop-blur-2xl bg-primary/10 md:py-5 md:px-20">
-        <div className="flex justify-between items-center">
-          <div>aa</div>
-          <ul className="gap-16 md:flex hidden">
+        {/* Mobile */}
+        <div className="md:hidden flex justify-between items-center">
+          <RxHamburgerMenu className="size-8" />
+          <SocialMediaContainer />
+        </div>
+
+        {/* Desktop */}
+        <div className="hidden justify-between items-center md:flex">
+          <ul className="flex gap-16">
             {navbar.map((item) => (
               <li key={item.name}>
                 <NavLink to={item.link} end={true} className="relative group">

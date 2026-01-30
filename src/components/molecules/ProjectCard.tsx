@@ -1,37 +1,37 @@
 import Button from "../atoms/Button";
 
 type ProjectCardProps = {
-  span?: string;
   image: string;
-  flexDirection: string;
   type: string;
   title: string;
   description: string;
+  handleClick?: () => void;
 };
 
 const ProjectCard = ({
-  span,
   image,
-  flexDirection,
   type,
   title,
   description,
+  handleClick,
 }: ProjectCardProps) => {
   return (
-    <div className={`rounded-md bg-base shadow-xl p-5 ${span}`}>
-      <div className={`flex ${flexDirection} gap-5`}>
-        <div
-          className={`aspect-video ${
-            flexDirection === "flex-row" ? "w-1/2" : "w-full"
-          } rounded-md overflow-hidden`}
-        >
+    <div
+      className={`rounded-md bg-primary/10 backdrop-blur-2xl border border-primary/30 shadow-xl p-5`}
+    >
+      <div className="flex flex-col h-full gap-5">
+        <div className={`aspect-video rounded-md overflow-hidden`}>
           <img src={image} alt="" className="w-full h-full object-cover" />
         </div>
-        <div className="flex flex-col gap-5 justify-center">
-          <span className="font-medium text-xl text-secondary">{type}</span>
-          <h2 className="text-4xl font-bold">{title}</h2>
-          <p className="font-medium">{description}</p>
-          <Button variant="primary" value="Live Demo" />
+        <span className="font-medium text-xl text-secondary">{type}</span>
+        <h2 className="text-4xl font-bold">{title}</h2>
+        <p className="font-medium">{description}</p>
+        <div className="mt-auto">
+          <Button
+            variant="secondary"
+            value="Live Demo"
+            handleClick={handleClick}
+          />
         </div>
       </div>
     </div>
