@@ -3,6 +3,7 @@ import Aurora from "../components/atoms/Aurora";
 import Lanyard from "../components/molecules/Lanyard";
 import TrueFocus from "../components/atoms/TrueFocus";
 import BlurText from "../components/atoms/BlurText";
+import SocialMediaContainer from "../components/molecules/SocialMediaContainer";
 
 const HomePage = () => {
   return (
@@ -33,6 +34,7 @@ const HomePage = () => {
             direction="top"
             className="text-5xl font-bold md:text-6xl"
           />
+          <SocialMediaContainer />
           <p className="font-medium">
             Graduated Full-Stack Web Developer bootcamp program from
             harisenin.com for deepening skills in Web Developer. Explore my

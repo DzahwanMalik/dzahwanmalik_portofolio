@@ -1,6 +1,5 @@
 import { NavLink } from "react-router";
 import navbar from "../../constants/navbar";
-import SocialMediaContainer from "../molecules/SocialMediaContainer";
 import { RxHamburgerMenu } from "react-icons/rx";
 
 const Navbar = () => {
@@ -9,12 +8,17 @@ const Navbar = () => {
       <div className="m-auto py-3 px-8 text-primary font-semibold rounded-full border border-primary/30 backdrop-blur-2xl bg-primary/10 md:py-5 md:px-20">
         {/* Mobile */}
         <div className="md:hidden flex justify-between items-center">
+          <NavLink to="/">
+            <img src="logo-dark.svg" alt="" className="w-28 drop-shadow-2xl" />
+          </NavLink>
           <RxHamburgerMenu className="size-8" />
-          <SocialMediaContainer />
         </div>
 
         {/* Desktop */}
         <div className="hidden justify-between items-center md:flex">
+          <NavLink to="/">
+            <img src="logo-dark.svg" alt="" className="w-28 drop-shadow-2xl" />
+          </NavLink>
           <ul className="flex gap-16">
             {navbar.map((item) => (
               <li key={item.name}>
@@ -40,7 +44,6 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          <SocialMediaContainer />
         </div>
       </div>
     </nav>
