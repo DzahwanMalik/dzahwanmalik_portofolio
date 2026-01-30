@@ -6,6 +6,17 @@ import BlurText from "../components/atoms/BlurText";
 import SocialMediaContainer from "../components/molecules/SocialMediaContainer";
 
 const HomePage = () => {
+  const handleSendEmail = () => {
+    window.location.href = "mailto:malikdzahwan22@gmail.com";
+  };
+
+  const handleDownloadResume = () => {
+    window.open(
+      "https://drive.google.com/file/d/16zWV3z8Mn7AxROAaPWDa0hoN7hGTeYrN/view?usp=drive_linkpdf",
+      "_blank",
+    );
+  };
+
   return (
     <>
       <Aurora
@@ -45,11 +56,13 @@ const HomePage = () => {
               variant="primary"
               value="Resume"
               icon={<i className="bi bi-file-earmark-arrow-down-fill" />}
+              handleClick={handleDownloadResume}
             />
             <Button
               variant="secondary"
               value="Contact Me"
               icon={<i className="bi bi-envelope-fill" />}
+              handleClick={handleSendEmail}
             />
           </div>
         </div>
