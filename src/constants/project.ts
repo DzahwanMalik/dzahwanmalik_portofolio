@@ -4,6 +4,7 @@ interface Project {
   image: string;
   description: string;
   url?: string;
+  techStack?: string[];
 }
 
 export const projects: Project[] = [
@@ -14,6 +15,7 @@ export const projects: Project[] = [
     description:
       "A movie discovery web app that integrates the TMDB API for real-time film data, built with React on the frontend and Express + MySQL (Sequelize ORM) on the backend, featuring secure user authentication with bcrypt.",
     url: "https://mission-inter-fe-1b-ng4m.vercel.app/",
+    techStack: ["React", "Express", "MySQL"],
   },
   {
     type: "Internal Project",
@@ -22,6 +24,7 @@ export const projects: Project[] = [
     description:
       "A secure and modern e-voting web application that allows users to cast votes online, view real-time results, and ensures a transparent and reliable voting process. Built with a responsive frontend using React and DaisyUI, and a robust backend powered by Express and MySQL, the system focuses on usability, security, and real-time data handling.",
     url: "https://pemilihan-istar-putra.vercel.app/",
+    techStack: ["React", "Express", "MySQL"],
   },
   {
     type: "Internal Project",
@@ -30,6 +33,7 @@ export const projects: Project[] = [
     description:
       "A web-based profile and information system developed for Pondok Pesantren Tarbiyatul Huda Pancawati Caringin. The website is designed to present institutional information, academic programs, announcements, and student activities in a clear and accessible way. Built with a responsive and modern user interface using React and DaisyUI, the platform focuses on usability, clean design, and easy content navigation for visitors.",
     url: "https://cheery-flan-c4caf2.netlify.app/",
+    techStack: ["React"],
   },
   {
     type: "Internal Project",
@@ -38,5 +42,6 @@ export const projects: Project[] = [
     description:
       "A web-based library management system for handling books, members, and borrowing transactions. Built with React on the frontend and Express + MySQL on the backend to deliver an efficient and organized digital library workflow.",
     url: "https://library-management-theta-taupe.vercel.app/",
+    techStack: ["React", "Express", "MySQL"],
   },
 ];

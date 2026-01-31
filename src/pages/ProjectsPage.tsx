@@ -22,6 +22,7 @@ const ProjectsPage = () => {
             image={project.image}
             description={project.description}
             handleClick={() => handleLiveDemo(project.url)}
+            badgeText={project.techStack}
           />
         ))}
       </div>
